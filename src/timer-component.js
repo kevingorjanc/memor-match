@@ -26,9 +26,9 @@ export default class TimerComponent extends React.Component {
 
 
             }, 35);
-             return((this.compareTime - this.startTime)/1000);
-            // console.log(this.compareTime - this.startTime);
-
+            if (this.compareTime !== "") {
+                return ((this.compareTime - this.startTime) / 1000);
+            }
 
         }
     }
@@ -38,7 +38,7 @@ export default class TimerComponent extends React.Component {
 
     render() {
         return (
-            <div className={"attempts-display"}>time elapsed = {this.timer()}</div>
+            <div className={"attempts-display"}>Time Elapsed = {this.timer()} seconds</div>
         )
     }
 }

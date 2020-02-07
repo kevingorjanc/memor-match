@@ -10,9 +10,9 @@
 }
 
 .row {
-    width: 100%;
+    /*width: 73%;*/
     height: 15%;
-    padding-left: 27%;
+    padding-left: 33%;
     margin-bottom: 30px;
 }
 
@@ -48,4 +48,32 @@
 }
 .orange{
     background-color: orange;
+}
+
+.start-screen {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    text-align: center;
+    padding-top: 20%;
+}
+.start-button{
+    width: 10%;
+    height: 5%;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+.start-button:hover{
+    cursor: pointer;
+}
+.title{
+    font-size: 3em;
+    text-align: center;
+}
+.rules{
+    text-align: center;
+}
+.game-won{
+    width: 50%;
+    margin-left: 25%;
 }

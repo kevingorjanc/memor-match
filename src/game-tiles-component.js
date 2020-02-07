@@ -1,5 +1,5 @@
 import React from 'react'
-import "./App"
+import "./game-screen-component"
 
 export default class GameTilesComponent extends React.Component {
     constructor(props) {

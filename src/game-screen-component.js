@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import GameTilesComponent from './game-tiles';
+import GameTilesComponent from './game-tiles-component';
 import TimerComponent from "./timer-component";
+import GameWonComponent from "./game-won-component"
 
-export default class App extends React.Component {
+export default class GameScreenComponent extends React.Component {
     constructor(props){
         super(props);
         this.state = {
@@ -72,13 +73,24 @@ export default class App extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <GameTilesComponent handleTileClick={this.handleTileClick}
-                                    resetTiles={this.state.resetTiles}
-                                    turnOffReset={this.turnOffReset}>
+                {this.state.matches !== 8 ?
+                    <React.Fragment>
+                        <div className={"title"}>Memor-Match</div>
+                        <div className={"rules"}><b>Each tile matches one other tile, find the matches!! (and remember
+                            them, too!)</b></div>
+                        <GameTilesComponent handleTileClick={this.handleTileClick}
+                                            resetTiles={this.state.resetTiles}
+                                            turnOffReset={this.turnOffReset}>
 
-                </GameTilesComponent>
-                <div className={"attempts-display"}>Attempts : {Math.floor(this.state.tileClicks / 2)}</div>;
-                <TimerComponent></TimerComponent>
+                        </GameTilesComponent>
+                        <div className={"attempts-display"}>Matches Attempted
+                            : {Math.floor(this.state.tileClicks / 2)}</div>
+                        ;
+                        <TimerComponent></TimerComponent>
+                    </React.Fragment>
+                    :
+                    <GameWonComponent resetGame={this.props.resetGame}></GameWonComponent>
+                }
             </React.Fragment>
         )
     }
