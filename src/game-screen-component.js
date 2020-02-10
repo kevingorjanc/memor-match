@@ -76,8 +76,7 @@ export default class GameScreenComponent extends React.Component {
                 {this.state.matches !== 8 ?
                     <React.Fragment>
                         <div className={"title"}>Memor-Match</div>
-                        <div className={"rules"}><b>Each tile matches one other tile, find the matches!! (and remember
-                            them, too!)</b></div>
+                        <div className={"rules"}><b>Work your memory as you match the tiles.</b></div>
                         <GameTilesComponent handleTileClick={this.handleTileClick}
                                             resetTiles={this.state.resetTiles}
                                             turnOffReset={this.turnOffReset}>
