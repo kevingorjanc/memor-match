@@ -3,6 +3,7 @@ import './App.css';
 import GameTilesComponent from './game-tiles-component';
 import TimerComponent from "./timer-component";
 import GameWonComponent from "./game-won-component"
+import memMatchLogo from "./memory-match.svg";
 
 export default class GameScreenComponent extends React.Component {
     constructor(props){
@@ -75,17 +76,20 @@ export default class GameScreenComponent extends React.Component {
             <React.Fragment>
                 {this.state.matches !== 8 ?
                     <React.Fragment>
-                        <div className={"title"}>Memor-Match</div>
+                        <div className={"title"}>
+                            <img src={memMatchLogo} alt={"MemoryMatch!"} className={"logo"}></img>
+                        </div>
                         <div className={"rules"}><b>Work your memory as you match the tiles.</b></div>
                         <GameTilesComponent handleTileClick={this.handleTileClick}
                                             resetTiles={this.state.resetTiles}
                                             turnOffReset={this.turnOffReset}>
 
                         </GameTilesComponent>
-                        <div className={"attempts-display"}>Matches Attempted
-                            : {Math.floor(this.state.tileClicks / 2)}</div>
-                        ;
-                        <TimerComponent></TimerComponent>
+                        <div className={"stat-display-box"}>
+                            <div className={"attempts-display"}>Matches Attempted
+                                : {Math.floor(this.state.tileClicks / 2)}</div>
+                            <TimerComponent></TimerComponent>
+                        </div>
                     </React.Fragment>
                     :
                     <GameWonComponent resetGame={this.props.resetGame}></GameWonComponent>

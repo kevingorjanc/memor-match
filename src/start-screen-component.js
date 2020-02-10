@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css"
 import GameScreenComponent from "./game-screen-component";
+import memMatchLogo from "./memory-match.svg"
 
 export default class StartScreenComponent extends React.Component{
     constructor(props){
@@ -33,7 +34,8 @@ export default class StartScreenComponent extends React.Component{
                     <GameScreenComponent resetGame={this.resetGame}></GameScreenComponent>
                     :
                     <div className={"start-screen"}>
-                        <div className={"title"}>Memor-Match</div>
+                        <img src={memMatchLogo} alt={"MemoryMatch!"} className={"logo"}></img>
+                        <br/>
                         <button className={"start-button"} onClick={this.startGame}>Start A New Game!</button>
                     </div>
                 }
