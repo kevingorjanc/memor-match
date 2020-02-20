@@ -48,13 +48,6 @@ export default class StartScreenComponent extends React.Component{
             viewScores: false
         })
     }
-    //
-    // saveNewScore(object){
-    //     this.setState({
-    //         newScore: object
-    //     })
-    // }
-    //
 
 
     whichView(){
