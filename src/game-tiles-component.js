@@ -37,8 +37,8 @@ export default class GameTilesComponent extends React.Component {
         let array = [
         <div id={"red"} className={"game-tiles"} onClick={this.props.handleTileClick}></div>,
         <div id={"red"} className={"game-tiles"} onClick={this.props.handleTileClick}></div>,
-        <div id={"black"} className={"game-tiles"} onClick={this.props.handleTileClick}></div>,
-        <div id={"black"} className={"game-tiles"} onClick={this.props.handleTileClick}></div>,
+        <div id={"yellow"} className={"game-tiles"} onClick={this.props.handleTileClick}></div>,
+        <div id={"yellow"} className={"game-tiles"} onClick={this.props.handleTileClick}></div>,
         <div id={"grey"} className={"game-tiles"} onClick={this.props.handleTileClick}></div>,
         <div id={"grey"} className={"game-tiles"} onClick={this.props.handleTileClick}></div>,
         <div id={"green"} className={"game-tiles"} onClick={this.props.handleTileClick}></div>,

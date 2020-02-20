@@ -1,54 +1,57 @@
 .game-tiles {
     float: left;
     width: 10%;
-    margin-right: 20px;
     height: 100%;
     border: 2px solid black;
     border-radius: 5px;
+
 }
 .game-tiles:hover{
     cursor: pointer;
 }
 
 .row {
-    /*width: 73%;*/
-    height: 15%;
-    padding-left: 33%;
-    margin-bottom: 30px;
+    height: 18%;
+    padding-left: 30%;
+    margin-bottom: 4px;
+    width: 100%;
 }
 
 #root {
     height: 100vh;
     width: 100vw;
+    position: relative;
 }
 
 .attempts-display{
     text-align: center;
 }
-
+.timer-display{
+    text-align: center;
+}
 .red{
-    background-color: red;
+    background-color: #CD354D;
 }
 .blue{
-    background-color: blue;
+    background-color: #4A59E2;
 }
-.black{
-    background-color: black;
+.yellow{
+    background-color: #C4D63E;
 }
 .grey{
-    background-color: grey;
+    background-color: #A1B9E6;
 }
 .green{
-    background-color: green;
+    background-color: #0BDE63;
 }
 .purple{
-    background-color: purple;
+    background-color: #B01BDA;
 }
 .pink{
-    background-color: pink;
+    background-color: #E6A6E2;
 }
 .orange{
-    background-color: orange;
+    background-color: #F5A623;
 }
 
 .start-screen {
@@ -58,8 +61,8 @@
     padding-top: 20%;
 }
 .start-button{
-    width: 15%;
-    height: 5%;
+    /*width: 15%;*/
+    /*height: 5%;*/
     border: 2px solid black;
     border-radius: 5px;
     margin-top: 20px;
@@ -77,20 +80,185 @@
     text-align: center;
     margin-bottom: 20px;
 }
-.game-won{
-    width: 50%;
-    margin-left: 25%;
-    text-align: center;
-}
 .logo{
-    width: 40%;
+    width: 30%;
+    margin: 5px;
 }
 .attempts-display{
     float: left;
     text-align: center;
     width: 50%;
 }
-.stat-display-box{
-    width: 33%;
-    padding-left: 32%;
+.game-won {
+    width: 50%;
+    /*height: 20%;*/
+    left: 25%;
+    top: 20%;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+
 }
+
+.reset-game-button{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 25px;
+    font-size: 1.75em;
+    background-color: white;
+}
+.reset-game-button:hover{
+    cursor: pointer;
+}
+
+.game-win-text{
+    margin-top: 20px;
+}
+
+.name-input-field-label{
+    float: left;
+    width: 30%;
+}
+.user-name{
+    width: 65%;
+    float: left;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    line-height: 2;
+}
+.attempts{
+    font-size: 1em;
+    margin: 15px 0;
+}
+.game-end-logo{
+    margin-bottom: 20px;
+}
+.high-scores{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.high-scores-title{
+    width: 33%;
+    margin-top: 20px;
+}
+.table-container{
+    text-align: center;
+    width: 100%;
+}
+.high-score-row-data{
+    text-align: center;
+    margin-right: 15px;
+}
+.high-score-table-headers{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.high-score-table-headers-small{
+    font-size: .7em;
+    margin-bottom: 20px;
+    width: 33%;
+}
+.load-warning{
+    color: #C5C9D4;
+}
+@media only screen and (max-width: 1000px) {
+    .row {
+        padding-left: 15%;
+    }
+
+    .game-tiles {
+        width: 18%;
+    }
+    .logo{
+        width: 50%;
+    }
+     .reset-game-button {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    font-size: 1.1em;
+    background-color: white;
+}
+}
+
+    /*@media only screen and (max-width: 500px){*/
+    /*.high-score-table-headers {*/
+        /*font-size: 1em;*/
+        /*margin-bottom: 20px;*/
+    /*}*/
+    /*.high-scores-title {*/
+        /*width: 75%;*/
+        /*margin: 20px 0;*/
+    /*}*/
+    /*.logo{*/
+        /*width: 90%;*/
+    /*}*/
+    /*#root{*/
+        /*padding: 5%;*/
+    /*}*/
+/*}*/
+/*@media only screen and (max-width: 600px){*/
+
+    /*#root{*/
+        /*padding: 5%;*/
+    /*}*/
+    /*.start-screen {*/
+    /*text-align: center;*/
+    /*padding-top: 20%;*/
+/*}*/
+    /*.score-rows{*/
+        /*font-size: .8em;*/
+    /*}*/
+    /*.name-input-field-label {*/
+    /*width: 100%;*/
+        /*text-align: center;*/
+        /*margin-top:20px;*/
+/*}*/
+    /*.reset-game-button {*/
+    /*border: 1px solid black;*/
+    /*border-radius: 5px;*/
+    /*margin: 20px;*/
+    /*font-size: 1.1em;*/
+    /*background-color: white;*/
+/*}*/
+    /*.user-name {*/
+    /*width: 100%;*/
+    /*border: 2px solid black;*/
+    /*background-color: white;*/
+    /*border-radius: 5px;*/
+        /*height:20px;*/
+/*}*/
+    /*.game-won {*/
+        /*width: 50%;*/
+        /*left: 20%;*/
+        /*top: 20%;*/
+    /*}*/
+
+/*}*/
+/*@media only screen and (min-width: 1000px){*/
+    /*.row{*/
+        /*height: 145px;*/
+        /*padding-left: 200px;*/
+    /*}*/
+    /*.game-tiles{*/
+        /*width: 155px*/
+    /*}*/
+    /*.logo{*/
+        /*width: 400px;*/
+    /*}*/
+    /*.title {*/
+        /*width: 1000px;*/
+    /*}*/
+    /*.stat-display-box  {*/
+        /*width: 1000px;*/
+    /*}*/
+    /*.rules{*/
+        /*width: 1000px;*/
+    /*}*/
+/*}*/
+

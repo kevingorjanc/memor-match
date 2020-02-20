@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import GameTilesComponent from './game-tiles-component';
 import TimerComponent from "./timer-component";
-import GameWonComponent from "./game-won-component"
 import memMatchLogo from "./memory-match.svg";
 
 export default class GameScreenComponent extends React.Component {
@@ -52,13 +51,13 @@ export default class GameScreenComponent extends React.Component {
             this.setState({
                 firstTileColor: "",
                 secondTileColor: "",
-                matches: (this.state.matches + 1)
+                matches: /*(this.state.matches + 1)*/ 8
             })
         } else {
             this.setState({
                 firstTileColor: "",
                 secondTileColor: "",
-                matches: 0,
+                matches: 8,
                 resetTiles: true
             });
         }
@@ -74,27 +73,32 @@ export default class GameScreenComponent extends React.Component {
     render() {
         return (
             <React.Fragment>
-                {this.state.matches !== 8 ?
-                    <React.Fragment>
                         <div className={"title"}>
                             <img src={memMatchLogo} alt={"MemoryMatch!"} className={"logo"}></img>
                         </div>
-                        <div className={"rules"}><b>Work your memory as you match the tiles.</b></div>
+                        <div className={"rules"}><b>Match the tiles, remember the matches.</b></div>
+                        <br></br>
+                         <div className={"stat-display-box"}>
+                             <div className={"attempts-display"}>Matches Attempted
+                                : {Math.floor(this.state.tileClicks / 2)}</div>
+                            <TimerComponent matches={this.state.matches}
+                                            tileClicks={this.state.tileClicks}
+                                            resetGame={this.props.resetGame}
+                                            viewHighScores={this.props.viewHighScores}></TimerComponent>
+                        </div>
+                        <br></br>
+
                         <GameTilesComponent handleTileClick={this.handleTileClick}
                                             resetTiles={this.state.resetTiles}
                                             turnOffReset={this.turnOffReset}>
-
                         </GameTilesComponent>
-                        <div className={"stat-display-box"}>
-                            <div className={"attempts-display"}>Matches Attempted
-                                : {Math.floor(this.state.tileClicks / 2)}</div>
-                            <TimerComponent></TimerComponent>
-                        </div>
-                    </React.Fragment>
-                    :
-                    <GameWonComponent resetGame={this.props.resetGame}></GameWonComponent>
-                }
+
+
+
             </React.Fragment>
+
+
+
         )
     }
 }
