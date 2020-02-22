@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93c00cdd-a69e-4f99-a217-5c0ec97af4f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/game-screen-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/game-screen-component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/start-screen-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/start-screen-component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +30,7 @@
           <entry key="css" value="13" />
           <entry key="html" value="2" />
           <entry key="ico" value="1" />
-          <entry key="js" value="50" />
+          <entry key="js" value="51" />
           <entry key="json" value="3" />
           <entry key="md" value="7" />
           <entry key="ts" value="3" />
@@ -43,7 +42,7 @@
           <entry key="HTML" value="2" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="50" />
+          <entry key="JavaScript" value="51" />
           <entry key="Markdown" value="7" />
           <entry key="TypeScript" value="3" />
         </counts>
@@ -58,7 +57,7 @@
         <counts>
           <entry key="css" value="2347" />
           <entry key="html" value="2" />
-          <entry key="js" value="19309" />
+          <entry key="js" value="19577" />
           <entry key="json" value="5" />
         </counts>
       </usages-collector>
@@ -67,7 +66,7 @@
           <entry key="CSS" value="2347" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="19309" />
+          <entry key="JavaScript" value="19577" />
         </counts>
       </usages-collector>
     </session>
@@ -132,11 +131,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game-screen-component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="885">
               <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -168,8 +179,8 @@
       <find>.game-tile</find>
       <find>.reset-game</find>
       <find>user-na</find>
-      <find>attemp</find>
       <find>.high-score</find>
+      <find>attemp</find>
     </findStrings>
     <replaceStrings>
       <replace>this.props.handleTileClick</replace>
@@ -193,7 +204,6 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/high-scores-list.json" />
         <option value="$PROJECT_DIR$/src/user-wins-component.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/game-tiles-component.js" />
         <option value="$PROJECT_DIR$/src/timer-component.js" />
         <option value="$PROJECT_DIR$/src/game-won-component.js" />
@@ -201,6 +211,7 @@
         <option value="$PROJECT_DIR$/src/high-scores-component.js" />
         <option value="$PROJECT_DIR$/src/start-screen-component.js" />
         <option value="$PROJECT_DIR$/src/game-screen-component.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
       </list>
     </option>
   </component>
@@ -219,9 +230,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="203" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="y" value="23" />
+    <option name="width" value="1185" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -309,9 +320,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26680973" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26680973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -325,7 +335,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33248407" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33248407" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -443,16 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="97" selection-start-line="5" selection-start-column="97" selection-end-line="5" selection-end-column="97" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -520,8 +520,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game-screen-component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="885">
           <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
