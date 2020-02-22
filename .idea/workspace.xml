@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/high-scores-component.js" line="50" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93c00cdd-a69e-4f99-a217-5c0ec97af4f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="93c00cdd-a69e-4f99-a217-5c0ec97af4f3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +29,7 @@
           <entry key="env" value="1" />
           <entry key="html" value="2" />
           <entry key="ico" value="1" />
-          <entry key="js" value="51" />
+          <entry key="js" value="52" />
           <entry key="json" value="5" />
           <entry key="md" value="7" />
           <entry key="ts" value="3" />
@@ -43,7 +41,7 @@
           <entry key="HTML" value="2" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="51" />
+          <entry key="JavaScript" value="52" />
           <entry key="Markdown" value="7" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="TypeScript" value="3" />
@@ -59,7 +57,7 @@
         <counts>
           <entry key="css" value="2347" />
           <entry key="html" value="2" />
-          <entry key="js" value="19601" />
+          <entry key="js" value="19605" />
           <entry key="json" value="5" />
         </counts>
       </usages-collector>
@@ -68,13 +66,26 @@
           <entry key="CSS" value="2347" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="19601" />
+          <entry key="JavaScript" value="19605" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -442,16 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -464,6 +465,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
