@@ -21,12 +21,11 @@ export default class GameTilesComponent extends React.Component {
             let i;
             let allTiles = [];
             allTiles.push(this.firstRow, this.secondRow, this.thirdRow, this.fourthRow);
-
-                    let xx =document.getElementsByClassName("game-tiles");
-                    for (i=0;i<xx.length;i++) {
-                        console.log(xx[i].className)
-                        xx[i].className = "game-tiles";
-                    }
+            let gameTiles = document.getElementsByClassName("game-tiles");
+            for (i = 0; i < gameTiles.length; i++) {
+                console.log(gameTiles[i].className)
+                gameTiles[i].className = "game-tiles";
+            }
 
             this.props.turnOffReset();
         }

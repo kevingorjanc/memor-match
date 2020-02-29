@@ -68,25 +68,26 @@ export default class HighScoresComponent extends React.Component {
     render(){
         return(
             <React.Fragment>
-            <div className={"high-scores"}>
-                <img src={HighScoresTitle} alt={"HIGH SCORES!!!"} className={"high-scores-title"}/>
-                <br></br>
-                <br/>
-                <table className={"table-container"} >
-                    <tbody >
-                        <tr className={"high-score-table-headers"}>
-                             <th className={"high-score-table-headers-small"}></th>
-                             <th className={"high-score-table-headers-small"}></th>
-                            <th className={"high-score-table-headers-small"}><i>Time + Attempted Matches</i></th>
-                        </tr>
 
-                        {this.state.displayableScores}
+            {/*<div className={"high-scores"}>*/}
+                {/*<img src={HighScoresTitle} alt={"HIGH SCORES!!!"} className={"high-scores-title"}/>*/}
+                {/*<br></br>*/}
+                {/*<br/>*/}
+                {/*<table className={"table-container"} >*/}
+                    {/*<tbody >*/}
+                        {/*<tr className={"high-score-table-headers"}>*/}
+                             {/*<th className={"high-score-table-headers-small"}></th>*/}
+                             {/*<th className={"high-score-table-headers-small"}></th>*/}
+                            {/*<th className={"high-score-table-headers-small"}><i>Time + Attempted Matches</i></th>*/}
+                        {/*</tr>*/}
 
-                    </tbody>
-                </table>
-                 <span className={"load-warning"}>(may take a few seconds to load...)</span>
-                <button className={"reset-game-button"} onClick={this.props.closeHighScores}>close scores</button>
-            </div>
+                        {/*{this.state.displayableScores}*/}
+
+                    {/*</tbody>*/}
+                {/*</table>*/}
+                 {/*<span className={"load-warning"}>(may take a few seconds to load...)</span>*/}
+                {/*<button className={"reset-game-button"} onClick={this.props.closeHighScores}>close scores</button>*/}
+            {/*</div>*/}
 
             </React.Fragment>
 
