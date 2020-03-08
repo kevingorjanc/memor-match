@@ -163,9 +163,7 @@
     margin-bottom: 20px;
     width: 33%;
 }
-.load-warning{
-    color: #C5C9D4;
-}
+
 @media only screen and (max-width: 1000px) {
     .row {
         padding-left: 15%;
