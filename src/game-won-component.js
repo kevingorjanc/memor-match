@@ -1,7 +1,7 @@
 import React from "react"
 import "./App.css"
 import memMatchLogo from "./memory-match.svg";
-import Backendless from 'backendless';
+// import Backendless from 'backendless';
 
 
 export default class GameWonComponent extends React.Component{
@@ -16,21 +16,35 @@ export default class GameWonComponent extends React.Component{
         if (document.getElementsByClassName("user-name")[0].value.length > 4
             &&
             document.getElementsByClassName("user-name")[0].value.length <= 40) {
-                let object = {
+                let scoreObject = {
                     attemptedMatches: this.props.tileClicks / 2,
                     name: document.getElementsByClassName("user-name")[0].value,
                     time: this.props.displayTime,
                     compositeScore: this.props.displayTime + (this.props.tileClicks / 2)
                 };
-                Backendless.Data.of("highScores").save((object))
-                    .then(function (response) {
-                        console.log(response);
-                    })
-                    .catch(function (error) {
-                        console.log(error)
-                    });
-                console.log("got hee", );
-                this.props.viewHighScores(object);
+               fetch('/high-scores', {
+                      method: 'POST',
+                      headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify(scoreObject)
+                      }
+               )
+                   .then(res => res.json())
+                   .then( (res) => {
+                       console.log(res);
+                   })
+
+                // Backendless.Data.of("highScores").save((object))
+                //     .then(function (response) {
+                //         console.log(response);
+                //     })
+                //     .catch(function (error) {
+                //         console.log(error)
+                //     });
+                // console.log("got hee", );
+                // this.props.viewHighScores(object);
         } else {
             alert("Moniker must be between 5 and 40 characters!!")
         }
