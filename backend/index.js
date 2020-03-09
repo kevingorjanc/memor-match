@@ -15,20 +15,22 @@ app.route('/high-scores')
     .get( (request, response) => {
         console.log("responding");
         Backendless.initApp("59FE682A-E700-AB72-FF67-F5C494C10500" , 'B1178B46-7137-47DC-88AB-576BBE0500F5');
-        Backendless.Data.of("highScores").find()
+        let queryBuilder = Backendless.DataQueryBuilder.create();
+        queryBuilder.setSortBy( ["compositeScore"] );
+        Backendless.Data.of("highScores").find( queryBuilder )
             .then( (returnedArray) => {
-                console.log(returnedArray);
+                console.log(returnedArray.length);
                 response.send(returnedArray);
             })
             .catch(function (error) {
-                console.log(error)
+                console.log(error);
+                response.send(error);
             });
     })
     .post( (request, response) => {
         Backendless.initApp("59FE682A-E700-AB72-FF67-F5C494C10500" , 'B1178B46-7137-47DC-88AB-576BBE0500F5');
         console.log("trying to submit");
         let cats = request.body;
-        console.log(cats);
         Backendless.Data.of("highScores").save((cats))
                     .then(function (res) {
                         console.log(res);

@@ -33,7 +33,6 @@ export default class GameWonComponent extends React.Component{
                )
                    .then(res => res.json())
                    .then( (res) => {
-                       console.log(res);
                        this.props.viewHighScores();
 
                    })

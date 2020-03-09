@@ -17,7 +17,6 @@ export default class HighScoresComponent extends React.Component {
         fetch('/high-scores')
             .then(res => res.json())
             .then( (res) => {
-                console.log(res);
                 this.setState({
                     backendData: res
                 })
@@ -31,7 +30,7 @@ export default class HighScoresComponent extends React.Component {
     }
 
     sortData() {
-        console.log("hey");
+        console.log("sorting response data");
         let sortedData = this.state.backendData.sort( (a, b) => {
             if (a.compositeScore > b.compositeScore){
                 return 1
@@ -39,13 +38,11 @@ export default class HighScoresComponent extends React.Component {
                 return -1
             }
         });
-        console.log(sortedData);
         this.makeSortedDataDisplayable(sortedData);
     }
 
     makeSortedDataDisplayable(sortedData){
         console.log("parsing sorted data for display");
-        console.log(sortedData);
         let displayableScoresArray = [];
         let i = 0;
         while (i <= (sortedData.length - 1) && i <= 50) {
@@ -57,8 +54,7 @@ export default class HighScoresComponent extends React.Component {
                </tr>;
             i++;
             displayableScoresArray.push(displayableScore);
-        };
-        console.log(displayableScoresArray);
+        }
        this.setState({
            displayableScores: displayableScoresArray
        })
