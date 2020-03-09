@@ -10,7 +10,6 @@ export default class StartScreenComponent extends React.Component{
             this.state = {
                 startGame: false,
                 viewScores: false,
-                newScore: ""
             }
             ;
             this.startGame = this.startGame.bind(this);
@@ -33,12 +32,10 @@ export default class StartScreenComponent extends React.Component{
         })
     }
 
-    viewHighScores(object){
-        console.log(object);
+    viewHighScores(){
         this.setState({
             viewScores: true,
             startGame: false,
-            newScore: object
             }
         );
     }

@@ -39,7 +39,6 @@ export default class GameScreenComponent extends React.Component {
                     tileClicks: this.state.tileClicks + 1
 
                 });
-                console.log("timing out color compare");
                 setTimeout(() => this.compareTileColors(), 300);
             }
         }
@@ -47,6 +46,7 @@ export default class GameScreenComponent extends React.Component {
 
 
      compareTileColors() {
+        console.log("comparing colors");
         if (this.state.firstTileColor === this.state.secondTileColor) {
             this.setState({
                 firstTileColor: "",
@@ -64,7 +64,6 @@ export default class GameScreenComponent extends React.Component {
     }
 
     turnOffReset(){
-        console.log("turn off reset");
         this.setState({
             resetTiles: false
         })
@@ -92,13 +91,7 @@ export default class GameScreenComponent extends React.Component {
                                             resetTiles={this.state.resetTiles}
                                             turnOffReset={this.turnOffReset}>
                         </GameTilesComponent>
-
-
-
             </React.Fragment>
-
-
-
         )
     }
 }

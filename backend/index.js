@@ -29,18 +29,14 @@ app.route('/high-scores')
         console.log("trying to submit");
         let cats = request.body;
         console.log(cats);
-        // Backendless.Data.of("highScores").save((object))
-        //             .then(function (response) {
-        //                 console.log(response);
-        //                 response.send("saved the score!")
-        //             })
-        //             .catch(function (error) {
-        //                 console.log(error);
-        //                 response.send("error saving")
-        //             });
-        //         console.log("got hee", );
-        response.send(JSON.stringify("whats up from /post"));
-        console.log("end post")
+        Backendless.Data.of("highScores").save((cats))
+                    .then(function (res) {
+                        console.log(res);
+                        response.send(JSON.stringify(res));
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
     });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));

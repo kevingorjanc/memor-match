@@ -34,17 +34,9 @@ export default class GameWonComponent extends React.Component{
                    .then(res => res.json())
                    .then( (res) => {
                        console.log(res);
-                   })
+                       this.props.viewHighScores();
 
-                // Backendless.Data.of("highScores").save((object))
-                //     .then(function (response) {
-                //         console.log(response);
-                //     })
-                //     .catch(function (error) {
-                //         console.log(error)
-                //     });
-                // console.log("got hee", );
-                // this.props.viewHighScores(object);
+                   })
         } else {
             alert("Moniker must be between 5 and 40 characters!!")
         }

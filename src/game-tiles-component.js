@@ -23,7 +23,6 @@ export default class GameTilesComponent extends React.Component {
             allTiles.push(this.firstRow, this.secondRow, this.thirdRow, this.fourthRow);
             let gameTiles = document.getElementsByClassName("game-tiles");
             for (i = 0; i < gameTiles.length; i++) {
-                console.log(gameTiles[i].className)
                 gameTiles[i].className = "game-tiles";
             }
 
@@ -53,24 +52,17 @@ export default class GameTilesComponent extends React.Component {
     ];
         while (array.length > 0) {
             let i = array.length;
-            console.log(i);
             let indexToRemove = Math.floor(Math.random() * i);
-            console.log(indexToRemove);
             if (i >= 13 && i <= 16) {
-                console.log("got here");
                 this.firstRow.push(array.splice(indexToRemove, 1));
             } else if (i >= 9 && i <= 12) {
-                console.log("got second");
                 this.secondRow.push(array.splice(indexToRemove, 1));
             } else if (i >= 5 && i <= 8) {
-                console.log("got third");
                 this.thirdRow.push(array.splice(indexToRemove, 1));
             } else {
-                console.log("got fourth");
                 this.fourthRow.push(array.splice(indexToRemove, 1));
             }
         }
-        console.log(this.firstRow, this.secondRow, this.thirdRow, this.fourthRow);
     }
 
 
