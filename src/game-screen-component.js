@@ -51,13 +51,13 @@ export default class GameScreenComponent extends React.Component {
             this.setState({
                 firstTileColor: "",
                 secondTileColor: "",
-                matches: /*(this.state.matches + 1)*/ 8
+                matches: (this.state.matches + 1)
             })
         } else {
             this.setState({
                 firstTileColor: "",
                 secondTileColor: "",
-                matches: 8,
+                matches: 0,
                 resetTiles: true
             });
         }
